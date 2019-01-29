@@ -1,6 +1,6 @@
 import sqlite3
 
-db = sqlite3.connect('/Users/lmuser/desktop/python_learn/python_exercise_on_sqlite_crud/01_author.sqlite')
+db = sqlite3.connect('/Users/lmuser/desktop/python_learn/python_exercise_on_sqlite_crud/01_author.db')
 cursor = db.cursor()
 cursor.execute('''CREATE TABLE authors(id INTEGER PRIMARY KEY,
                        username TEXT unique, author_name TEXT)''')
